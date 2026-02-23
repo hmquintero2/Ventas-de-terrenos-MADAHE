@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Terrenos en Yaruquí - Venta de Terrenos MAHEDA. Terrenos a minutos del Aeropuerto Internacional de Quito."/>
+  <title>Proyecto Yaruquí | Venta de Terrenos Quito</title>
+    <link rel="icon" href="./img/logo.jpg" type="logo."/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+         <img src="./img/logo.jpg" alt="Logo MAHEDA" class="logo-img" style="height: 40px; width: auto; margin-right: 10px;"/>
+        <span>Venta de Terrenos MAHEDA</span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="proyectos.html" class="nav-link active">Nuestros Proyectos</a></li>
+        <li><a href="quienes-somos.html" class="nav-link">Quiénes Somos</a></li>
+        <li><a href="index.html#contacto" class="nav-link nav-cta">Contáctanos</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <img class="page-hero-bg" src="https://www.inmobiliarianucleo.com/blog/wp-content/uploads/2025/02/se-puede-vender-un-terreno-proindiviso-1.jpg" alt="Yaruquí"/>
+    <div class="container page-hero-content">
+      <p class="page-hero-tag">Proyecto · Pichincha</p>
+      <h1 class="page-hero-title"><em>Yaruquí</em></h1>
+    </div>
+  </div>
+
+  <section class="proyecto-detail">
+    <div class="container">
+      <div class="proyecto-detail-grid">
+        <div>
+          <div class="gallery-main">
+            <img id="mainImg" src="./img/Y1.png" alt="Yaruquí foto principal"/>
+          </div>
+          <div class="gallery-thumbs">
+            <img src="./img/Y1.png" class="active" onclick="changeImg(this,'./img/Y1.png')"/>
+            <img src="./img/Y2.png" onclick="changeImg(this,'./img/Y2.png')"/>
+            <img src="./img/Y3.png" onclick="changeImg(this,'./img/Y3.png')"/>
+            <img src="./img/Y4.png" onclick="changeImg(this,'./img/Y4.png')"/>
+          </div>
+        </div>
+
+        <div class="proyecto-info">
+          <h2>Proyecto Yaruquí</h2>
+          <div class="proyecto-precio">Desde $14.500 USD</div>
+          <p class="proyecto-desc">Terrenos estratégicamente ubicados en Yaruquí, parroquia que colinda directamente con el Aeropuerto Internacional Mariscal Sucre. Una de las zonas de mayor crecimiento y plusvalía en Pichincha. Ideal para residencia, comercio y logística. Conectividad total a Quito en 30 minutos.</p>
+          <div class="proyecto-specs">
+            <div class="spec-item"><span class="spec-label">Área desde</span><span class="spec-value">200 m² en adelante</span></div>
+            <div class="spec-item"><span class="spec-label">Financiamiento</span><span class="spec-value">Directo - Sin banco</span></div>
+            <div class="spec-item"><span class="spec-label">Escrituras</span><span class="spec-value">Inmediatas</span></div>
+            <div class="spec-item"><span class="spec-label">Ubicación</span><span class="spec-value">Yaruquí, Pichincha</span></div>
+            <div class="spec-item"><span class="spec-label">Disponibilidad</span><span class="spec-value">Últimos Terrenos</span></div>
+          </div>
+          <div class="check-list" style="margin-bottom:24px;">
+            <li style="display:flex;gap:10px;align-items:center;margin-bottom:10px;font-size:.9rem;color:#555"><i class="fas fa-check-circle" style="color:var(--gold)"></i> 5 min del Aeropuerto Internacional</li>
+            <li style="display:flex;gap:10px;align-items:center;margin-bottom:10px;font-size:.9rem;color:#555"><i class="fas fa-check-circle" style="color:var(--gold)"></i> 30 min del centro de Quito</li>
+            <li style="display:flex;gap:10px;align-items:center;margin-bottom:10px;font-size:.9rem;color:#555"><i class="fas fa-check-circle" style="color:var(--gold)"></i> Zona industrial y residencial en expansión</li>
+            <li style="display:flex;gap:10px;align-items:center;margin-bottom:10px;font-size:.9rem;color:#555"><i class="fas fa-check-circle" style="color:var(--gold)"></i> Servicios básicos completos</li>
+          </div>
+          <a href="https://wa.me/message/QXF6SSZLIWANG1" target="_blank" class="wa-btn-proyecto">
+            <i class="fab fa-whatsapp" style="font-size:1.4rem"></i>
+            Quiero información de Yaruquí
+          </a>
+        </div>
+      </div>
+
+      <div class="proyecto-map">
+        <h3>Ubicación del Proyecto</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31913.52!2d-78.33!3d-0.17!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59e6b30f33dbf%3A0x1b3e0a2b67e2b05e!2sYaruqu%C3%AD!5e0!3m2!1ses!2sec!4v1" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- OTROS PROYECTOS -->
+  <section class="proyectos-home" style="background:var(--cream2);padding:70px 0;">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Más opciones</p>
+        <h2 class="section-title">Otros <em>Proyectos</em></h2>
+      </div>
+      <div class="cards-grid" style="grid-template-columns:repeat(3,1fr)">
+        <a href="proyecto-malchingui.html" class="project-card">
+          <div class="card-img-wrap"><img src="./img/M1.png" alt="Malchingui"/></div>
+          <div class="card-body"><h3>Malchingui</h3><p>En la pintoresca parroquia de Malchingui. Terrenos desde 200 m².</p><span class="card-link">Ver proyecto <i class="fas fa-arrow-right"></i></span></div>
+        </a>
+        <a href="proyecto-carmen.html" class="project-card">
+          <div class="card-img-wrap"><img src="./img/CR1.png" alt="Carmen"/></div>
+          <div class="card-body"><h3>Carmen</h3><p>En la zona de Carmen. Terrenos desde 200 m².</p><span class="card-link">Ver proyecto <i class="fas fa-arrow-right"></i></span></div>
+        </a>
+        <a href="proyecto-PifoBelem.html" class="project-card">
+          <div class="card-img-wrap"><img src="./img/PB1.png" alt="Pifo Belem"/><span class="card-badge new">Nuevo</span></div>
+          <div class="card-body"><h3>Pifo </h3><p>Sector logístico en auge. Terrenos desde 200 m².</p><span class="card-link">Ver proyecto <i class="fas fa-arrow-right"></i></span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="nav-logo footer-logo"><span class="logo-icon">⬡</span><span>Venta de Terrenos MAHEDA</span></div>
+          <p>Tu terreno ideal en Ecuador.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/share/184TUNWzhw/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@asesoresinmobiliarios01?_r=1&_t=ZS-945YZOYn1Vt"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/message/QXF6SSZLIWANG1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div><h4>Proyectos</h4><ul><li><a href="proyecto-malchingui.html">Malchingui</a></li><li><a href="proyecto-cochasqui.html">Cochasquí</a></li><li><a href="proyecto-yaruqui.html">Yaruquí</a></li><li><a href="proyecto-Carmen.html">Carmen</a></li><li><a href="proyecto-PifoBelem.html">Pifo</a></li><li><a href="proyecto-SanCristobal.html">Ibarra San cristobal</a></li></ul></div>
+        <div><h4>Empresa</h4><ul><li><a href="quienes-somos.html">Quiénes Somos</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></div>
+        <div><h4>Contacto</h4><p><i class="fas fa-phone"></i> +593 988 37 333</p><p><i class="fas fa-envelope"></i> mahedainmoviliaria@gmail.com</p><p><i class="fas fa-map-marker-alt"></i> Quito, Ecuador</p></div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 Venta de Terrenos MAHEDA. Todos los derechos reservados.</p></div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/message/QXF6SSZLIWANG1" target="_blank" class="whatsapp-float">
+    <i class="fab fa-whatsapp"></i><span class="wa-tooltip">¡Escríbenos!</span>
+  </a>
+
+  <script>
+    function changeImg(thumb, src) {
+      document.getElementById('mainImg').src = src;
+      document.querySelectorAll('.gallery-thumbs img').forEach(t => t.classList.remove('active'));
+      thumb.classList.add('active');
+    }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
