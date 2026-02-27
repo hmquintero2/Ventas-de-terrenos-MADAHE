@@ -72,7 +72,7 @@ if (form) {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     btn.textContent = '¡Mensaje enviado! Te contactaremos pronto.';
-    btn.style.background = '#2d7a3a5e';
+    btn.style.background = '#455f4962';
     setTimeout(() => {
       btn.textContent = 'Enviar Consulta';
       btn.style.background = '';
@@ -80,3 +80,40 @@ if (form) {
     }, 4000);
   });
 }
+
+// ---- NOTIFICACIÓN FLOTANTE (wa-notification) ----
+window.addEventListener('load', function() {
+  const notif = document.querySelector('.wa-notification');
+  if (!notif) return;
+
+  // ensure initial style
+  notif.style.opacity = '1';
+  notif.style.transition = 'opacity 0.5s ease';
+
+  function hideNotif() {
+    notif.style.opacity = '0';
+  }
+  function showNotif() {
+    notif.style.opacity = '1';
+    // retrigger animation
+    notif.style.animation = 'none';
+    // force reflow
+    void notif.offsetWidth;
+    notif.style.animation = 'notifBounce 0.6s cubic-bezier(0.34, 1, 0.64, 1)';
+  }
+
+  // Start cycle: visible 30s, hidden 40s, repeat
+  function startCycle() {
+    setTimeout(() => {
+      hideNotif();
+      setTimeout(() => {
+        showNotif();
+        startCycle();
+      }, 40000);
+    }, 30000);
+  }
+
+  // Kickoff
+  showNotif();
+  startCycle();
+});
