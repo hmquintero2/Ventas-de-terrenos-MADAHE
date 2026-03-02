@@ -4,12 +4,13 @@
 
 :root {
   --gold: #B8960C;
+  --nav-height: 80px;
   --gold-light: #D4AF37;
   --dark: #0D0D0D;
   --dark2: #1A1A1A;
   --dark3: #252525;
-  --cream: #F5F0E8;
-  --cream2: #EDE5D0;
+  --cream: #000000;
+  --cream2: #0f0f0f;
   --text: #2C2C2C;
   --text-light: #666;
   --white: #FFFFFF;
@@ -30,6 +31,7 @@ body {
   color: var(--text);
   background: var(--cream);
   overflow-x: hidden;
+  padding-top: var(--nav-height);
 }
 
 img { max-width: 100%; display: block; }
@@ -129,11 +131,13 @@ ul { list-style: none; }
 /* ---- HERO ---- */
 .hero {
   position: relative;
-  height: 100vh;
-  min-height: 650px;
+  min-height: calc(100vh - var(--nav-height));
+  min-height: max(650px, calc(100vh - var(--nav-height)));
   display: flex;
   align-items: center;
   overflow: hidden;
+  box-sizing: border-box;
+  padding-top: 0; /* content already offset by body padding */
 }
 .hero-video {
   position: absolute;
