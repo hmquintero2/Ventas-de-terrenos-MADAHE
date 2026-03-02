@@ -4,13 +4,12 @@
 
 :root {
   --gold: #B8960C;
-  --nav-height: 80px;
   --gold-light: #D4AF37;
   --dark: #0D0D0D;
   --dark2: #1A1A1A;
   --dark3: #252525;
-  --cream: #000000;
-  --cream2: #0f0f0f;
+  --cream: #F5F0E8;
+  --cream2: #EDE5D0;
   --text: #2C2C2C;
   --text-light: #666;
   --white: #FFFFFF;
@@ -31,7 +30,6 @@ body {
   color: var(--text);
   background: var(--cream);
   overflow-x: hidden;
-  padding-top: var(--nav-height);
 }
 
 img { max-width: 100%; display: block; }
@@ -131,13 +129,11 @@ ul { list-style: none; }
 /* ---- HERO ---- */
 .hero {
   position: relative;
-  min-height: calc(100vh - var(--nav-height));
-  min-height: max(650px, calc(100vh - var(--nav-height)));
+  height: 100vh;
+  min-height: 650px;
   display: flex;
   align-items: center;
   overflow: hidden;
-  box-sizing: border-box;
-  padding-top: 0; /* content already offset by body padding */
 }
 .hero-video {
   position: absolute;
@@ -155,7 +151,7 @@ ul { list-style: none; }
 .hero-content {
   position: relative;
   z-index: 2;
-  padding: 0 24px;
+  padding: 40px 10px 0 10px;
   max-width: 1200px;
   margin: 0 auto;
   width: 100%;
@@ -182,12 +178,11 @@ ul { list-style: none; }
   color: var(--gold-light);
 }
 .hero-subtitle {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: rgba(255,255,255,0.75);
-  max-width: 500px;
-  line-height: 1.7;
-  margin-bottom: 40px;
-  animation: fadeUp 0.8s ease 0.6s both;
+  max-width: 700px;
+  line-height: 1.8;
+  margin-bottom: 16px;
 }
 .hero-buttons {
   display: flex;
